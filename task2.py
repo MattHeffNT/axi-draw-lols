@@ -7,6 +7,8 @@ A4_LAND = (0, 0, 11.75, 8.25) # A4 Landscape bounds
 # Set your paper bounds here, to either landscape or portrait
 BOUNDS = A4_PORT
 
+draw = True
+
 def letter_T(t, x, y):
     t.pu()
     t.goto(x,y)
@@ -55,7 +57,7 @@ def main():
     TUTU(t)
     output_img = 'task2_out'
     save_img(t, output_img)
-    # draw_img(turtle) # Uncomment to draw your image
+    draw_img(t) # Uncomment to draw your image
     
 if __name__ == '__main__':
     main()

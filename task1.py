@@ -9,6 +9,8 @@ A4_LAND = (0, 0, 11.75, 8.25) # A4 Landscape bounds
 # Set your paper bounds here, to either landscape or portrait
 BOUNDS = A4_LAND
 
+draw = True
+
 # make global object so all functions can access it
 t = axi.Turtle()
 
@@ -53,3 +55,4 @@ if __name__ == '__main__':
     draw_u()
     output_img = 'task1_out'
     save_img(t, output_img)
+    draw_img(t)

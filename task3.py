@@ -7,6 +7,8 @@ A4_LAND = (0, 0, 11.75, 8.25) # A4 Landscape bounds
 # Set your paper bounds here, to either landscape or portrait
 BOUNDS = A4_LAND
 
+draw = True
+
 def letter_T(t, x, y):
 
     # function to draw the letter 'X' starting at a specific starting point (x,y)
@@ -53,6 +55,7 @@ def main():
 
     output_img = 'task3-out'
     save_img(t, output_img)
+    draw_img(t)
  
 if __name__ == '__main__':
     main()
